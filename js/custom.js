@@ -42,3 +42,12 @@ document.querySelector('#menuTwo').addEventListener('click', e => {
       submenuTwo.style.visibility = ''
     }
 })
+
+jQuery(function($){
+  $("ul li a").click(function(){
+      var id = $(this).attr("id");
+  
+      $(".main-content > section").removeClass("visible");
+      $(".main-content > section." + id).addClass("visible");
+  });
+});

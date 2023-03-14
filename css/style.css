@@ -20,6 +20,13 @@ body {
 	overflow: hidden;
 }
 
+.sidebar-menu {
+	background-color: var(--black-color);
+	border-radius: 40px 0px 0px 40px;
+	margin: 25px 0px 0px 7px;
+	padding: 10px 0px 20px;
+}
+
 .menu {
 	width: 5%;
 	height: 100%;
@@ -72,6 +79,14 @@ body {
 .submenu .nav-tabs .nav-link:hover {
 	border-radius: 5px;
 	border: 1px solid var(--bg-color);
+}
+
+.main-content > section {
+	display: none;
+}
+  
+.main-content > section.visible{
+	display: block;
 }
 
 .masonry {
